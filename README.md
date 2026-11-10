@@ -14,4 +14,4 @@ for bash, install oh-my-bash first.
 
 i change some keybind on mango so it wont overlap with fish and vim.
 
-change the location first in some files before using it.
+inside some of the files, change the directory to your directory.
