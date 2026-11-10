@@ -6,11 +6,11 @@ The theme is based from Elysia from Honkai Impact 3 (my waifu).
 
 _Yes, i use AI to get the color and the design, but i still fix some of it to make it better._
 
-_also it's my first time doing this. If i do something wrong please let me know._
+_also it's my first time doing this. If i did something wrong please let me know._
 
 # HOW TO USE
 
-prepare the temp folder (any names should work) for cloning the repo:
+pre the temp folder (any names should work) for cloning the repo:
 
 `mkdir -p ~/dotfiles`
 
@@ -22,7 +22,7 @@ copy my repo:
 
 `git clone https://github.com/RealBlueZ/dotfiles`
 
-DON'T FORGET to change the path location to your own file location.
+DON'T FORGET to change the path location to your own file location in some of the files.
 
 and use a nerd font for this, because i used it alot and its cool.
 
