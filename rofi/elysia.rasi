@@ -1,0 +1,108 @@
+configuration {
+    modi:                       "drun";
+    show-icons:                 true;
+    display-drun:               "🌸";
+    drun-display-format:        "{name}";
+}
+
+* {
+    /* Elysia Theme Palette with 80% Opacity (CC Hex Alpha) */
+    bg:          #16151dCC; /* 80% transparent midnight violet */
+    bg-alt:      #211f2cCC; /* 80% transparent slate-panel */
+    fg:          #f2f0f5;   /* Pure crystal white text */
+    
+    ely-pink:    #ffb7ce;   /* Signature blossom pink */
+    ely-purple:  #d0b3ff;   /* Pastel crystal purple */
+    ely-blue:    #b3e5fc;   /* Crystal blue accent */
+    placeholder: #625b7a;   /* Deep lavender hint text */
+    
+    background-color:   transparent;
+    text-color:         @fg;
+}
+
+window {
+    width:              780px;
+    height:             460px;
+    background-color:   @bg;
+    border:             3px;
+    border-color:       @ely-pink;
+    border-radius:      16px;
+}
+
+/* Master horizontal container (Left/Right Split) */
+mainbox {
+    orientation:        horizontal;
+    children:           [ "left-panel", "right-panel" ];
+}
+
+/* --- LEFT PANEL: THE VISUAL ART --- */
+left-panel {
+    width:              240px;
+    background-color:   @bg-alt;
+    border-radius:      13px 0px 0px 13px;
+    
+    /* 'vertical' forces a horizontal image to fit the height cleanly without stretching */
+    background-image:   url("/home/ycp/Pictures/wallpaper/ely_vertical_1.jpg", width); 
+}
+
+/* --- RIGHT PANEL: THE APP DRAWER --- */
+right-panel {
+    orientation:        vertical;
+    padding:            25px;
+    children:           [ "inputbar", "listview" ];
+}
+
+inputbar {
+    padding:            10px 14px;
+    background-color:   @bg-alt;
+    border:             1px;
+    border-color:       @ely-purple;
+    border-radius:      8px;
+    children:           [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color:         @ely-pink;
+    font:               "Iosevka Nerd Font Bold 14";
+    margin:             0px 12px 0px 0px;
+}
+
+entry {
+    placeholder:        "Hi~ (Search apps...)";
+    placeholder-color:  @placeholder;
+}
+
+listview {
+    margin:             20px 0px 0px 0px;
+    columns:            1;
+    lines:              7;
+    fixed-height:       true;
+}
+
+element {
+    padding:            10px;
+    border-radius:      8px;
+    orientation:        horizontal;
+    children:           [ "element-icon", "element-text" ];
+}
+
+element-icon {
+    size:               28px;
+    margin:             0px 14px 0px 0px;
+}
+
+element-text {
+    vertical-align:     0.5;
+    font:               "Iosevka Nerd Font 11";
+}
+
+/* Highlighted item hover behavior */
+element selected {
+    background-color:   @ely-pink;
+    text-color:         #16151d;
+}
+element-text selected {
+    text-color:         #16151d;
+    font:               "Iosevka Nerd Font Bold 11";
+}
+

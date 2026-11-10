@@ -1,0 +1,66 @@
+@define-color bg    #181825;
+@define-color fg    #cdd6f4;
+@define-color mag   #f5c2e7;
+@define-color surface #313244;
+@define-color red   #f38ba8;
+
+* {
+    font-family: "Iosevka Nerd Font", monospace;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @fg;
+}
+
+/* Setiap modul/island berdiri sendiri secara mengapung */
+.modules-left, .modules-center, .modules-right {
+    background-color: rgba(24, 24, 37, 0.85);
+    padding: 2px 8px;
+    border: 1px solid rgba(245, 194, 231, 0.15);
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @fg;
+    background: transparent;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    color: @mag;
+    background-color: @surface;
+}
+
+#mpris {
+    color: @mag;
+    padding: 0 12px;
+}
+
+#cpu, #memory, #network, #clock {
+    padding: 0 8px;
+    color: @fg;
+    background-color: @surface;
+    margin: 4px 2px;
+}
+
+#clock {
+    color: @mag;
+}
+
+#custom-power {
+    color: @red;
+    padding: 0 10px;
+    background-color: @surface;
+    margin: 4px 0 4px 2px;
+    font-size: 15px;
+}
+
+#custom-power:hover {
+    background-color: @red;
+    color: @bg;
+}
