@@ -28,7 +28,7 @@ and use a nerd font for this, because i used it alot and its cool.
 
 ## Window Manager (MangoWM)
 
-Just move the config.conf from the ~/dotfiles/mango/ to your mango config directory, or if you like the terminal so much then:
+move the config.conf from the ~/dotfiles/mango/ to your mango config directory, or if you like the terminal so much then:
 
 `cp ~/dotfiles/mango/config.conf <your mango directory>`
 
@@ -59,7 +59,7 @@ You need to download oh-my-bash for this. Link down here:
 
 (https://github.com/ohmybash/oh-my-bash)
 
-after you've setup oh my bash, replace the powerline-wizard.theme.sh with mine.
+after you've setup oh my bash, replace the `powerline-wizard.theme.sh` file with mine.
 
 make a backup for your `.bashrc` first if you want to replace with mine.
 
@@ -73,7 +73,7 @@ and reload your terminal.
 
 ### FISH
 
-just copy it my config.fish to your own fish directory, or:
+copy my config.fish to your own fish directory, or:
 
 `cp ~/dotfiles/fish/config.fish <your fish directory>`
 
@@ -83,7 +83,7 @@ also for the `starship.toml` put it on your `.config`.
 
 ## Fastfetch
 
-again copy it or:
+copy my `config.conf` to your fastfetch directory, or:
 
 `cp ~/dotfiles/fastfetch/config.conf <your fastfetch directory>`
 
@@ -93,7 +93,7 @@ don't forget to use the picture location. the line should be:
 
 ## Waybar
 
-copy the `config.jsonc` and `style.css`, or:
+copy the `config.jsonc` and `style.css` and put it inside your waybar directory, or:
 
 `cp ~/dotfiles/waybar/config.jsonc <your waybar directory>`
 
@@ -101,7 +101,7 @@ copy the `config.jsonc` and `style.css`, or:
 
 ## Rofi
 
-copy the `elysia.rasi` or:
+copy the `elysia.rasi` and put it inside your rofi directory, or:
 
 `cp ~/dotfiles/rofi/elysia.rasi <your rofi directory>`
 
@@ -111,12 +111,12 @@ also change the picture location again:
 
 NOTE:
 
-i use a vertical picture so change the code for the photo.
+i use a vertical picture so change the code for the photo. So change the code tp adjust it with your own picture.
 
 ## Vim
 
-just... yeah, like bashrc, or:
-`cp ~/dotfiles/bash/.vimrc ~/`
+copy the `.vimrc` and put it inside your `.config` directory, or:
+`cp ~/dotfiles/vim/.vimrc ~/`
 
 ---
 
