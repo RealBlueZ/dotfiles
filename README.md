@@ -4,6 +4,8 @@ My dotfiles for ricing linux specifically EndeavourOS with mangoWM.
 
 The theme is based from Elysia from Honkai Impact 3 (my waifu).
 
+screenshot coming soon.
+
 _Yes, i use AI to get the color and the design, but i still fix some of it to make it better._
 
 _also it's my first time doing this. If i did something wrong please let me know._
@@ -111,11 +113,12 @@ also change the picture location again:
 
 NOTE:
 
-i use a vertical picture so change the code for the photo. So change the code tp adjust it with your own picture.
+i use a vertical picture so change the code for the photo. So change the code to adjust it with your own picture.
 
 ## Vim
 
 copy the `.vimrc` and put it inside your `.config` directory, or:
+
 `cp ~/dotfiles/vim/.vimrc ~/`
 
 ---
